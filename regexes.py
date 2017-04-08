@@ -7,3 +7,4 @@ regex = re.compile(r'\w+@\w+\.com|org|net')
 email_addresses = regex.findall(text)
 
 print(email_addresses)
+print(re.findall(r'\w+@\w+\.com|org|net', text))
