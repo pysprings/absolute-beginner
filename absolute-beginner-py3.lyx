@@ -183,7 +183,50 @@ frametitle{Outline}
 
 
 \backslash
-tableofcontents[currentsection,currentsubsection]
+begin{columns}[t]         
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{column}{.5
+\backslash
+textwidth}             
+\backslash
+tableofcontents[currentsection,currentsubsection,sections={1-3}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{column}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{column}{.5
+\backslash
+textwidth}             
+\backslash
+tableofcontents[currentsection,currentsubsection,sections={4-6}]
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{column}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{columns}
 \end_layout
 
 \begin_layout Plain Layout
@@ -227,70 +270,65 @@ Outline
 \end_layout
 
 \begin_deeper
-\begin_layout Itemize
-Introduction
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{columns}[t]         
 \end_layout
 
-\begin_layout Itemize
-First Steps
+\begin_layout Plain Layout
+
+
+\backslash
+begin{column}{.5
+\backslash
+textwidth}             
+\backslash
+tableofcontents[sections={1-3}]
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Running Python
+\begin_layout Plain Layout
+
+
+\backslash
+end{column}
 \end_layout
 
-\begin_layout Itemize
-Expressions
+\begin_layout Plain Layout
+
+
+\backslash
+begin{column}{.5
+\backslash
+textwidth}             
+\backslash
+tableofcontents[sections={4-6}]
 \end_layout
 
-\end_deeper
-\begin_layout Itemize
-Data Types
+\begin_layout Plain Layout
+
+
+\backslash
+end{column}
 \end_layout
 
-\begin_deeper
-\begin_layout Itemize
-Strings
+\begin_layout Plain Layout
+
+
+\backslash
+end{columns}
 \end_layout
 
-\begin_layout Itemize
-Lists
+\end_inset
+
+
 \end_layout
 
-\begin_layout Itemize
-Dictionaries
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Libraries
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Environments
-\end_layout
-
-\begin_layout Itemize
-Third-Party Packages
-\end_layout
-
-\end_deeper
-\begin_layout Itemize
-Control Flow
-\end_layout
-
-\begin_deeper
-\begin_layout Itemize
-Booleans
-\end_layout
-
-\begin_layout Itemize
-Looping and Branching
-\end_layout
-
-\end_deeper
 \end_deeper
 \begin_layout Standard
 \begin_inset Separator parbreak
@@ -3308,6 +3346,14 @@ end{frame}
 
 \end_layout
 
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Subsection
+Practice Problems
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -3575,6 +3621,10 @@ end{frame}
 
 \end_layout
 
+\begin_layout Subsection
+Final Takeaways
+\end_layout
+
 \begin_layout Frame
 \begin_inset Argument 4
 status open
@@ -3583,10 +3633,6 @@ status open
 Conclusion
 \end_layout
 
-\end_inset
-
-
-\begin_inset Separator latexpar
 \end_inset
 
 
@@ -3655,6 +3701,10 @@ https://automatetheboringstuff.com/
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+Projects!
 \end_layout
 
 \begin_layout Frame
