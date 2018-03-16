@@ -354,7 +354,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-http://sayat.me/pysprings
+https://sayat.me/pysprings
 \end_layout
 
 \end_inset
@@ -744,6 +744,26 @@ status open
 \begin_layout Plain Layout
 
 >>> import this
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+exit with:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> exit()
 \end_layout
 
 \end_inset
@@ -2616,12 +2636,26 @@ status collapsed
 
 \begin_layout Plain Layout
 
-http://pypi.python.org
+https://pypi.org/
 \end_layout
 
 \end_inset
 
+ (newer)
+\end_layout
 
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://pypi.python.org
+\end_layout
+
+\end_inset
+
+ (original)
 \end_layout
 
 \end_deeper
