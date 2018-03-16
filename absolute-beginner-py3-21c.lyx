@@ -705,7 +705,7 @@ status open
 
 \begin_layout Plain Layout
 
-$ python3
+$ python
 \end_layout
 
 \end_inset
@@ -835,7 +835,7 @@ status open
 
 \begin_layout Plain Layout
 
-$ python3 script.py
+$ python script.py
 \end_layout
 
 \end_inset
@@ -1770,7 +1770,7 @@ status open
 
 \begin_layout Plain Layout
 
-$ python3 hello.py
+$ python hello.py
 \end_layout
 
 \end_inset
@@ -2586,7 +2586,7 @@ status open
 
 \begin_layout Plain Layout
 
-$ pip3 install requests
+$ pip install requests
 \end_layout
 
 \end_inset
