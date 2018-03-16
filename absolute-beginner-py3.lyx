@@ -3604,7 +3604,7 @@ status collapsed
 
 \begin_layout Plain Layout
 
-http://sayat.me/pysprings
+https://sayat.me/pysprings
 \end_layout
 
 \end_inset
@@ -3673,7 +3673,33 @@ https://www.reddit.com/r/dailyprogrammer/
 
 \begin_deeper
 \begin_layout Itemize
-Game of Threes
+Game of Threes 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://redd.it/3r7wxz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Rövarspråket (Robber's Language) 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://redd.it/341c03
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
