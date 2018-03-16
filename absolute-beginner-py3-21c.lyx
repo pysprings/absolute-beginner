@@ -1,0 +1,3753 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass beamer
+\begin_preamble
+\usetheme{Szeged}
+% or ...
+
+\setbeamercovered{transparent}
+% or whatever (possibly just delete it)
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "times" "default"
+\font_sans "default" "default"
+\font_typewriter "beramono" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 2
+\use_package amssymb 2
+\use_package cancel 1
+\use_package esint 0
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 2
+\tocdepth 2
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Python Beginner's Workshop
+\begin_inset Argument 1
+status open
+
+\begin_layout Plain Layout
+Beginning Python
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Author
+Ryan E.
+ Freckleton
+\end_layout
+
+\begin_layout Institute
+PySprings 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Date
+2018-03-15 
+\end_layout
+
+\begin_layout Subtitle
+In Collaboration with the Pikes Peak Library District 21st Century Library
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+pgfdeclareimage[height=0.5cm]{institution-logo}{pysprings-logo.png}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+logo{
+\backslash
+pgfuseimage{institution-logo}}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+AtBeginSubsection[]{
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frame<beamer>{ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+frametitle{Outline} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+tableofcontents[currentsection,currentsubsection]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+  }
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Outline
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Introduction
+\end_layout
+
+\begin_layout Itemize
+First Steps
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Running Python
+\end_layout
+
+\begin_layout Itemize
+Expressions
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Data Types
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Strings
+\end_layout
+
+\begin_layout Itemize
+Lists
+\end_layout
+
+\begin_layout Itemize
+Dictionaries
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Libraries
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Environments
+\end_layout
+
+\begin_layout Itemize
+Third-Party Packages
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Control Flow
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Booleans
+\end_layout
+
+\begin_layout Itemize
+Looping and Branching
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conduct
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Treat everyone with the respect due their inherent dignity.
+\end_layout
+
+\begin_layout Itemize
+All communication should be appropriate for a professional audience including
+ people of many different backgrounds.
+\end_layout
+
+\begin_layout Itemize
+Be kind to others.
+ Make an environment conducive to learning.
+ Behave professionally.
+\end_layout
+
+\begin_layout Itemize
+Thank you for helping make this a welcoming, friendly event for all.
+\end_layout
+
+\begin_layout Itemize
+Contact the organizers at 
+\begin_inset CommandInset href
+LatexCommand href
+name "pysprings@pysprings.org"
+target "pysprings@pysprings.org"
+type "mailto:"
+
+\end_inset
+
+ or 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://sayat.me/pysprings
+\end_layout
+
+\end_inset
+
+ (anonymous)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Greetings
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Your name
+\end_layout
+
+\begin_layout Enumerate
+How did you get here?
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Learning Goals
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+1-2-4-All
+\end_layout
+
+\begin_layout Itemize
+What's one thing you know about programming in Python?
+\end_layout
+
+\begin_layout Itemize
+What's one thing that you'd like to learn about programming in Python?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Learning Cycle
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Description
+Introduction Short lecture introducing a new concept from Python
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Exploration Hands-on application of the concept introduced.
+ Work in groups and collaborate if you prefer! Explore the material in a
+ hands-on manner
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Invention What have we learned through our exploration? What surprises did
+ we encounter? What mysteries did we uncovered?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Description
+Application With our newly 
+\begin_inset Quotes eld
+\end_inset
+
+invented
+\begin_inset Quotes erd
+\end_inset
+
+ knowledge, what can we do? This leads into a new exploration phase 
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+What is Programming?
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Programming is a creative activity
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+It doesn't involve much math
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Programming is simply the act of entering instructions for the computer
+ to perform
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{An Example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,numbers=right,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+passwordFile = open('SecretPasswordFile.txt')
+\end_layout
+
+\begin_layout Plain Layout
+
+secretPassword = passwordFile.read()
+\end_layout
+
+\begin_layout Plain Layout
+
+print('Enter your password.')
+\end_layout
+
+\begin_layout Plain Layout
+
+typedPassword = input()
+\end_layout
+
+\begin_layout Plain Layout
+
+if typedPassword == secretPassword:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print('Access granted')
+\end_layout
+
+\begin_layout Plain Layout
+
+    if typedPassword == '12345':
+\end_layout
+
+\begin_layout Plain Layout
+
+        print('That one is used on luggage.')
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print('Access denied')
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+First Steps
+\end_layout
+
+\begin_layout Subsection
+Running Python
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Running Python}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Example
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+run python with:
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python
+\end_layout
+
+\end_inset
+
+ enter the following into the interactive prompt:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> print("Hello, World!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> import this
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+exit with:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> exit()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Running a Python Script}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Let's create script.py now
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print("Hello, World!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and run it with
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python script.py
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Notation}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+When you see an example like:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> print("Hello, World!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+it means to type that out in the interactive prompt.
+ When you see an example like:
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+example.py
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,numbers=right,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+print("Hello, World!)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+it means to type that out into a file, in this case, named 
+\emph on
+example.py
+\emph default
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Expressions
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Python as a Calculator}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> 100 * 2
+\end_layout
+
+\begin_layout Plain Layout
+
+200
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> (1 + 2 + 3 + 4 + 5 + 6) / 6
+\end_layout
+
+\begin_layout Plain Layout
+
+3.5
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> 1 - 2*100 + 3*12
+\end_layout
+
+\begin_layout Plain Layout
+
+-163
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> abs(-163)
+\end_layout
+
+\begin_layout Plain Layout
+
+163
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Python Math Operations
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Operators:
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\series bold
++ - * /
+\family default
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+\series bold
+% ** //
+\family default
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Does python obey order of operations?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Functions:
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\series bold
+abs bin hex oct ord round
+\family default
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+
+\family typewriter
+\series bold
+divmod min max pow 
+\family default
+\series default
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What's the difference between these two lists of functions?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Functions}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,numbers=right,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def hello():
+\end_layout
+
+\begin_layout Plain Layout
+
+    print('Howdy!')
+\end_layout
+
+\begin_layout Plain Layout
+
+    print('Howdy!!!')
+\end_layout
+
+\begin_layout Plain Layout
+
+    print('Hello there.')
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+hello()
+\end_layout
+
+\begin_layout Plain Layout
+
+hello()
+\end_layout
+
+\begin_layout Plain Layout
+
+hello()
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Functions}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,numbers=right,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def hello(name):
+\end_layout
+
+\begin_layout Plain Layout
+
+    print('Hello ' + name)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+hello('Alice')
+\end_layout
+
+\begin_layout Plain Layout
+
+hello('Bob')
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Functions}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,numbers=right,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+def add(a, b):
+\end_layout
+
+\begin_layout Plain Layout
+
+     return a + b
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+print(add(1,2))
+\end_layout
+
+\begin_layout Plain Layout
+
+print(add(1,2) + add(3,4))
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Data Types
+\end_layout
+
+\begin_layout Subsection
+Strings
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Strings}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Examples
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+
+\family typewriter
+\begin_inset listings
+lstparams "language=Python,showstringspaces=false"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+"This is a string."
+\end_layout
+
+\begin_layout Plain Layout
+
+'This is also a string.'
+\end_layout
+
+\begin_layout Plain Layout
+
+"This is 'a' string"
+\end_layout
+
+\begin_layout Plain Layout
+
+'This is "a" string'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Examples
+
+\end_layout
+
+\begin_layout Examples
+We can also get more information from python:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> help(str)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Strings}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrameSubtitle
+More Examples
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> 'this is a string'.title()
+\end_layout
+
+\begin_layout Plain Layout
+
+'This Is A String'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> 'this is a string'.upper()
+\end_layout
+
+\begin_layout Plain Layout
+
+'THIS IS A STRING'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> 'what ARE you doing!?'.lower()
+\end_layout
+
+\begin_layout Plain Layout
+
+'what are you doing!?'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> "   there's whitespace in this   ".strip()
+\end_layout
+
+\begin_layout Plain Layout
+
+"there's whitespace in this string."
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Hello again}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+hello.py
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+name = input('What is your name? ')
+\end_layout
+
+\begin_layout Plain Layout
+
+print('Hello, ' + name + '!')
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+let's try it!
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ python hello.py
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Indexing}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},breaklines=true,language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> s = 'We are the Knights who say ni!'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> s[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+'W'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> s[-1]
+\end_layout
+
+\begin_layout Plain Layout
+
+'!'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> s[7:10]
+\end_layout
+
+\begin_layout Plain Layout
+
+'the'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> s[-7:-4]
+\end_layout
+
+\begin_layout Plain Layout
+
+'say'
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Indexing}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset listings
+lstparams "basicstyle={\ttfamily}"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ +---+---+---+---+---+---+
+\end_layout
+
+\begin_layout Plain Layout
+
+ | P | y | t | h | o | n |
+\end_layout
+
+\begin_layout Plain Layout
+
+ +---+---+---+---+---+---+
+\end_layout
+
+\begin_layout Plain Layout
+
+ 0   1   2   3   4   5   6
+\end_layout
+
+\begin_layout Plain Layout
+
+-6  -5  -4  -3  -2  -1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Lists
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Lists}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},breaklines=true,language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> mylist = [1, 2, 'three', "4", 5.3]
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> s = "What are the words in this string?"
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> s.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+['What', 'are', 'the', 'words', 'in', 'this', 'string?']
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> words = s.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> words.sort()
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> words
+\end_layout
+
+\begin_layout Plain Layout
+
+['What', 'are', 'in', 'string?', 'the', 'this', 'words']
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Lists}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrameSubtitle
+What are the methods of list?
+\end_layout
+
+\begin_layout Standard
+Remember:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> help(list)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+and try out:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> dir(list)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Dictionaries
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Dictionaries}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},breaklines=true,language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> myCat = {'size': 'fat', 'color': 'gray',
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+          'disposition': 'loud'}
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> myCat['size']
+\end_layout
+
+\begin_layout Plain Layout
+
+'fat'
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> 'My cat has ' + myCat['color'] + ' fur.'
+\end_layout
+
+\begin_layout Plain Layout
+
+'My cat has gray fur.'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Dictionaries}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrameSubtitle
+What are the methods of list?
+\end_layout
+
+\begin_layout Standard
+Remember:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> help(dict)
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> dir(dict)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Libraries
+\end_layout
+
+\begin_layout Subsection
+Environments
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Environments}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+virtualenv
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ virtualenv raindrop
+\end_layout
+
+\begin_layout Plain Layout
+
+$ .
+ raindrop/source/bin/activate # Linux and OSX
+\end_layout
+
+\begin_layout Plain Layout
+
+$ randrop
+\backslash
+Scripts
+\backslash
+activate # Windows
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Third-Party Packages
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Installing Third-Party Packages}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ pip install requests
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Finding Third-Party Packages
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://pypi.org/
+\end_layout
+
+\end_inset
+
+ (newer)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://pypi.python.org
+\end_layout
+
+\end_inset
+
+ (original)
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Requests Example}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+requests_script.py
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,numbers=right,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+import requests
+\end_layout
+
+\begin_layout Plain Layout
+
+resp = requests.get('http://httpbin.org/ip')
+\end_layout
+
+\begin_layout Plain Layout
+
+print(resp.json())
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Control Flow
+\end_layout
+
+\begin_layout Subsection
+Booleans
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Booleans}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> bool(1)
+\end_layout
+
+\begin_layout Plain Layout
+
+True
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> bool(0)
+\end_layout
+
+\begin_layout Plain Layout
+
+False
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> bool("no")
+\end_layout
+
+\begin_layout Plain Layout
+
+True
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> bool("")
+\end_layout
+
+\begin_layout Plain Layout
+
+False
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> bool([])
+\end_layout
+
+\begin_layout Plain Layout
+
+False
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> bool([42])
+\end_layout
+
+\begin_layout Plain Layout
+
+True
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Looping and Branching
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Looping and Branching}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+>>> words = 'this is a list of words'.split()
+\end_layout
+
+\begin_layout Plain Layout
+
+>>> for word in words:
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+     print(word.title())
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+\end_layout
+
+\begin_layout Plain Layout
+
+This
+\end_layout
+
+\begin_layout Plain Layout
+
+Is
+\end_layout
+
+\begin_layout Plain Layout
+
+A
+\end_layout
+
+\begin_layout Plain Layout
+
+List
+\end_layout
+
+\begin_layout Plain Layout
+
+Of
+\end_layout
+
+\begin_layout Plain Layout
+
+Words
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Looping and Branching}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+password = input(
+\end_layout
+
+\begin_layout Plain Layout
+
+    "Enter the secret word: "
+\end_layout
+
+\begin_layout Plain Layout
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+if password == "sesame":
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Access granted.")
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Access denied!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Pause
+
+\end_layout
+
+\begin_layout Standard
+Boolean operators:
+\end_layout
+
+\begin_layout Itemize
+
+\family typewriter
+\series bold
+== != <= >= > < in
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Looping and Branching}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrameSubtitle
+While Loop
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+while True:
+\end_layout
+
+\begin_layout Plain Layout
+
+    password = input("Enter the secret word: ")
+\end_layout
+
+\begin_layout Plain Layout
+
+    if password == "sesame":
+\end_layout
+
+\begin_layout Plain Layout
+
+        print("Access granted.")
+\end_layout
+
+\begin_layout Plain Layout
+
+        break
+\end_layout
+
+\begin_layout Plain Layout
+
+    else:
+\end_layout
+
+\begin_layout Plain Layout
+
+        print("Access denied!")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Invention
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+What problems, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What mysteries, if any, did you encounter?
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Pause
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+What other take-aways are there from this session, what could you use from
+ it in the future?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator parbreak
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Looping and Branching}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout FrameSubtitle
+elif
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+lstparams "basicstyle={\ttfamily},frame=single,language=Python,showstringspaces=false,tabsize=4"
+inline false
+status open
+
+\begin_layout Plain Layout
+
+age = int(input("How old are you? "))
+\end_layout
+
+\begin_layout Plain Layout
+
+if age < 18:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("You're not old enough dance.")
+\end_layout
+
+\begin_layout Plain Layout
+
+elif age == 18:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("Welcome, is it your first time here?")
+\end_layout
+
+\begin_layout Plain Layout
+
+else:
+\end_layout
+
+\begin_layout Plain Layout
+
+    print("You can dance if you want to, you can leave your friends behind.")
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Practice Problems 
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is
+ stored in spam, and prints Greetings! if anything else is stored in spam.
+\end_layout
+
+\begin_layout Itemize
+Write a short program that prints the numbers 1 to 10 using a for loop.
+ Then write an equivalent program that prints the numbers 1 to 10 using
+ a while loop.
+\end_layout
+
+\begin_layout Itemize
+Write a function named collatz() that has one parameter named number.
+ If number is even, then collatz() should print number // 2 and return this
+ value.
+ If number is odd, then collatz() should print and return 3 * number + 1.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Practice Problems}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Say you have a list value like this:
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+spam = ['apples', 'bananas', 'tofu', 'cats']
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Write a function that takes a list value as an argument and returns a string
+ with all the items separated by a comma and a space, with the word 
+\begin_inset Quotes eld
+\end_inset
+
+and
+\begin_inset Quotes erd
+\end_inset
+
+ inserted before the last item.
+ For example, passing the previous spam list to the function would return
+ 
+\begin_inset Flex Structure
+status open
+
+\begin_layout Plain Layout
+'apples, bananas, tofu, and cats'
+\end_layout
+
+\end_inset
+
+.
+ But your function should be able to work with any list value passed to
+ it.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Practice Problems}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+You are creating a fantasy video game.
+ The data structure to model the player’s inventory will be a dictionary
+ where the keys are string values describing the item in the inventory and
+ the value is an integer value detailing how many of that item the player
+ has.
+ For example, the dictionary value 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+{'rope': 1, 'torch': 6, 'gold coin': 42,
+\end_layout
+
+\begin_layout Plain Layout
+
+ 'dagger': 1, 'arrow': 12}
+\end_layout
+
+\end_inset
+
+ means the player has 1 rope, 6 torches, 42 gold coins, and so on.
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{frame}[fragile] 
+\backslash
+frametitle{Practice Problems}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Write a function named displayInventory() that would take any possible “inventor
+y” and display it like the following:
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Inventory:
+\end_layout
+
+\begin_layout Plain Layout
+
+12 arrow
+\end_layout
+
+\begin_layout Plain Layout
+
+42 gold coin
+\end_layout
+
+\begin_layout Plain Layout
+
+1 rope
+\end_layout
+
+\begin_layout Plain Layout
+
+6 torch
+\end_layout
+
+\begin_layout Plain Layout
+
+1 dagger
+\end_layout
+
+\begin_layout Plain Layout
+
+Total number of items: 62
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{frame}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Conclusion
+\end_layout
+
+\end_inset
+
+
+\begin_inset Separator latexpar
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Final Takeaways (1-2-4-all)
+\end_layout
+
+\begin_layout Itemize
+Survey 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://goo.gl/forms/ZpNl0z8pw5J8J8Rv1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Feedback – 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://sayat.me/pysprings
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Based on 
+\begin_inset Flex URL
+status collapsed
+
+\begin_layout Plain Layout
+
+https://automatetheboringstuff.com/
+\end_layout
+
+\end_inset
+
+ released under 
+\begin_inset Graphics
+	filename cc-by-nc-sa.png
+	height 1ex
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Separator plain
+\end_inset
+
+
+\end_layout
+
+\begin_layout Frame
+\begin_inset Argument 4
+status open
+
+\begin_layout Plain Layout
+Projects!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Daily Programmer 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://www.reddit.com/r/dailyprogrammer/
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Game of Threes 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://redd.it/3r7wxz
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Rövarspråket (Robber's Language) 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://redd.it/341c03
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+WordPlay 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/jesstess/Wordplay
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Colorwall 
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+https://github.com/jesstess/ColorWall
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document
