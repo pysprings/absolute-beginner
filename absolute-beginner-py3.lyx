@@ -798,7 +798,7 @@ status open
 \backslash
 begin{frame}[fragile] 
 \backslash
-frametitle{Installing Python}
+frametitle{Running a Python Script}
 \end_layout
 
 \end_inset
