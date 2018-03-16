@@ -98,7 +98,7 @@ Ryan E.
 \end_layout
 
 \begin_layout Institute
-PySprings
+PySprings 
 \begin_inset Newline newline
 \end_inset
 
@@ -106,7 +106,7 @@ PySprings
 \end_layout
 
 \begin_layout Date
-2017-08-19
+2018-03-15 
 \end_layout
 
 \begin_layout Subtitle
@@ -161,7 +161,7 @@ AtBeginSubsection[]{
 
 
 \backslash
-frame<beamer>{
+frame<beamer>{ 
 \end_layout
 
 \begin_layout Plain Layout
@@ -172,7 +172,7 @@ frame<beamer>{
 
 
 \backslash
-frametitle{Outline}
+frametitle{Outline} 
 \end_layout
 
 \begin_layout Plain Layout
@@ -337,7 +337,7 @@ Thank you for helping make this a welcoming, friendly event for all.
 \end_layout
 
 \begin_layout Itemize
-Contact the organizers at
+Contact the organizers at 
 \begin_inset Flex URL
 status collapsed
 
@@ -348,7 +348,7 @@ pysprings@pysprings.org
 
 \end_inset
 
- or
+ or 
 \begin_inset Flex URL
 status collapsed
 
@@ -499,7 +499,7 @@ Invention What have we learned through our exploration? What surprises did
 
 \end_deeper
 \begin_layout Description
-Application With our newly
+Application With our newly 
 \begin_inset Quotes eld
 \end_inset
 
@@ -507,7 +507,7 @@ invented
 \begin_inset Quotes erd
 \end_inset
 
- knowledge, what can we do? Thisleads into a new exploration phase
+ knowledge, what can we do? This leads into a new exploration phase 
 \end_layout
 
 \end_deeper
@@ -578,7 +578,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{An Example}
 \end_layout
@@ -681,7 +681,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Running Python}
 \end_layout
@@ -776,7 +776,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Installing Python}
 \end_layout
@@ -901,7 +901,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Notation}
 \end_layout
@@ -961,7 +961,7 @@ print("Hello, World!)
 \end_layout
 
 \begin_layout Standard
-it means to type that out into a file, in this case, named
+it means to type that out into a file, in this case, named 
 \emph on
 example.py
 \emph default
@@ -996,7 +996,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Python as a Calculator}
 \end_layout
@@ -1185,7 +1185,7 @@ abs bin hex oct ord round
 
 \family typewriter
 \series bold
-divmod min max pow
+divmod min max pow 
 \family default
 \series default
 
@@ -1273,7 +1273,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Functions}
 \end_layout
@@ -1357,7 +1357,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Functions}
 \end_layout
@@ -1426,7 +1426,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Functions}
 \end_layout
@@ -1503,7 +1503,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Strings}
 \end_layout
@@ -1617,7 +1617,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Strings}
 \end_layout
@@ -1706,7 +1706,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Hello again}
 \end_layout
@@ -1836,7 +1836,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Indexing}
 \end_layout
@@ -1930,7 +1930,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Indexing}
 \end_layout
@@ -2061,7 +2061,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Lists}
 \end_layout
@@ -2146,7 +2146,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Lists}
 \end_layout
@@ -2280,7 +2280,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Dictionaries}
 \end_layout
@@ -2356,7 +2356,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Dictionaries}
 \end_layout
@@ -2479,7 +2479,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Environments}
 \end_layout
@@ -2551,7 +2551,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Installing Third-Party Packages}
 \end_layout
@@ -2633,7 +2633,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Requests Example}
 \end_layout
@@ -2705,7 +2705,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Booleans}
 \end_layout
@@ -2814,7 +2814,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Looping and Branching}
 \end_layout
@@ -2910,7 +2910,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Looping and Branching}
 \end_layout
@@ -3057,7 +3057,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Looping and Branching}
 \end_layout
@@ -3200,7 +3200,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Looping and Branching}
 \end_layout
@@ -3281,7 +3281,7 @@ end{frame}
 status open
 
 \begin_layout Plain Layout
-Practice Problems
+Practice Problems 
 \end_layout
 
 \end_inset
@@ -3321,7 +3321,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Practice Problems}
 \end_layout
@@ -3390,7 +3390,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Practice Problems}
 \end_layout
@@ -3406,7 +3406,7 @@ You are creating a fantasy video game.
  where the keys are string values describing the item in the inventory and
  the value is an integer value detailing how many of that item the player
  has.
- For example, the dictionary value
+ For example, the dictionary value 
 \begin_inset listings
 inline false
 status open
@@ -3450,7 +3450,7 @@ status open
 
 
 \backslash
-begin{frame}[fragile]
+begin{frame}[fragile] 
 \backslash
 frametitle{Practice Problems}
 \end_layout
@@ -3549,7 +3549,7 @@ Final Takeaways (1-2-4-all)
 \end_layout
 
 \begin_layout Itemize
-Survey
+Survey 
 \begin_inset Flex URL
 status collapsed
 
@@ -3564,7 +3564,7 @@ https://goo.gl/forms/ZpNl0z8pw5J8J8Rv1
 \end_layout
 
 \begin_layout Itemize
-Feedback –
+Feedback – 
 \begin_inset Flex URL
 status collapsed
 
@@ -3579,7 +3579,7 @@ http://sayat.me/pysprings
 \end_layout
 
 \begin_layout Itemize
-Based on
+Based on 
 \begin_inset Flex URL
 status collapsed
 
@@ -3590,7 +3590,7 @@ https://automatetheboringstuff.com/
 
 \end_inset
 
- released under
+ released under 
 \begin_inset Graphics
 	filename cc-by-nc-sa.png
 	height 1ex
@@ -3623,7 +3623,7 @@ Projects!
 
 \begin_deeper
 \begin_layout Itemize
-Daily Programmer
+Daily Programmer 
 \begin_inset Flex URL
 status open
 
@@ -3644,7 +3644,7 @@ Game of Threes
 
 \end_deeper
 \begin_layout Itemize
-WordPlay
+WordPlay 
 \begin_inset Flex URL
 status open
 
@@ -3659,7 +3659,7 @@ https://github.com/jesstess/Wordplay
 \end_layout
 
 \begin_layout Itemize
-Colorwall
+Colorwall 
 \begin_inset Flex URL
 status open
 
