@@ -338,19 +338,17 @@ Thank you for helping make this a welcoming, friendly event for all.
 
 \begin_layout Itemize
 Contact the organizers at 
-\begin_inset Flex URL
-status collapsed
-
-\begin_layout Plain Layout
-
-pysprings@pysprings.org
-\end_layout
+\begin_inset CommandInset href
+LatexCommand href
+name "pysprings@pysprings.org"
+target "pysprings@pysprings.org"
+type "mailto:"
 
 \end_inset
 
  or 
 \begin_inset Flex URL
-status collapsed
+status open
 
 \begin_layout Plain Layout
 
