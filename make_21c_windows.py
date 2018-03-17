@@ -1,5 +1,8 @@
 from __future__ import print_function
 import re
+import sys
+
+quiet = 'quiet' in sys.argv
 
 infile = 'absolute-beginner-py3.lyx'
 outfile = 'absolute-beginner-py3-21c.lyx'
@@ -13,5 +16,6 @@ text = re.sub('\$ pip3', '$ pip', text)
 with open(outfile, 'wb') as fh:
     fh.write(text)
 
-print('[%s] has been created. You must convert it to PDF' % outfile)
-print("...after doing so, don't forget to add/commit the file(s)")
+if not quiet:
+    print('[%s] has been created. You must convert it to PDF' % outfile)
+    print("...after doing so, don't forget to add/commit the file(s)")
