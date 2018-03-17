@@ -15,6 +15,9 @@ made there.  The other documents are built from that one.
 
 The master document contains nix-like instructions, e.g. `c9.io`.
 
+NOET: On Windows, as long as you have [Lyx](https://www.lyx.org/) installed, you can run
+`make.bat` to create the PDFs.
+
 ## 21C - Windows
 The Python version that's installed on the 21C computers does not provide
 `python3.exe`.  It only provides `python.exe`, so the slides should change
